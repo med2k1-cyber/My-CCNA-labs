@@ -1,14 +1,14 @@
 
 
-## 📌 Project Overview
+##  Project Overview
 This repository contains the physical topology and running configurations for a highly redundant, secure Layer 2 campus network. Built from scratch using Cisco Catalyst 2960 switches, this lab demonstrates enterprise-standard switching architectures, focusing on preventing Layer 2 loops, maximizing inter-switch bandwidth, and mitigating common network attacks.
 
-## 🏗️ Topology & Architecture
+##  Topology & Architecture
 * **Hardware:** 3x Cisco Catalyst 2960 Switches, 4x End Devices.
 * **Physical Layout:** Triangle loop topology ensuring no single point of failure between core distribution nodes.
 * **Logical Links:** All switch-to-switch connections are bundled using dual-cable Layer 2 EtherChannels to double bandwidth capability and provide instant failover.
 
-## 🛠️ Technologies & Protocols Implemented
+##  Technologies & Protocols Implemented
 * **VLAN Segmentation:** `802.1Q` Trunking, Access Ports.
 * **Link Aggregation:** `LACP` (802.3ad) Layer 2 EtherChannel.
 * **Loop Prevention:** `Rapid-PVST+` (802.1w) Spanning Tree Protocol.
@@ -16,7 +16,7 @@ This repository contains the physical topology and running configurations for a 
 
 ---
 
-## ⚙️ Configuration Breakdown
+##  Configuration Breakdown
 
 ### Phase 1: Base Configuration & Segmentation
 * Configured global hostnames and encrypted console line passwords (`service password-encryption`).
@@ -36,14 +36,14 @@ This repository contains the physical topology and running configurations for a 
 
 ---
 
-## ✅ Verification & Testing
+##  Verification & Testing
 The following commands were used to verify network integrity and functionality:
 * `show vlan brief` - Verified VLAN database and access port assignments.
 * `show interfaces trunk` - Confirmed 802.1Q encapsulation and Native VLAN 99 status.
 * `show etherchannel summary` - Verified LACP negotiation, confirming all Port-Channels achieved the `(SU)` state (Layer 2 / In Use).
 * `show spanning-tree` - Confirmed Rapid-PVST+ Root Bridge elections and active/blocked port states.
 
-## 📁 Repository Contents
+##  Repository Contents
 * `Switch1_Config.txt`: Complete running configuration for Primary Root Bridge.
 * `Switch2_Config.txt`: Complete running configuration for Secondary Root Bridge.
 * `Switch3_Config.txt`: Complete running configuration for Access Switch.
