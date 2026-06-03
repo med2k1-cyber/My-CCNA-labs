@@ -44,7 +44,7 @@ The following commands were used to verify network integrity and functionality:
 * `show spanning-tree` - Confirmed Rapid-PVST+ Root Bridge elections and active/blocked port states.
 
 ##  Repository Contents
-* `Switch1_Config.txt`: Complete running configuration for Primary Root Bridge.
-* `Switch2_Config.txt`: Complete running configuration for Secondary Root Bridge.
-* `Switch3_Config.txt`: Complete running configuration for Access Switch.
-* `Topology.png`: Visual layout of the physical wiring and logical channels.
+* [Switch1_Config.txt](Switch1_Config.txt): Complete running configuration for Primary Root Bridge.
+* [Switch2_Config.txt](Switch2_Config.txt): Complete running configuration for Secondary Root Bridge.
+* [Switch3_Config.txt](Switch3_Config.txt): Complete running configuration for Access Switch.
+* [Topology.png](Topology.png): Visual layout of the physical wiring and logical channels.
