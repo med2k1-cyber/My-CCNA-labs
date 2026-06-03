@@ -1,4 +1,4 @@
-#Layer 2 Switching & Redundancy Lab
+
 
 ## 📌 Project Overview
 This repository contains the physical topology and running configurations for a highly redundant, secure Layer 2 campus network. Built from scratch using Cisco Catalyst 2960 switches, this lab demonstrates enterprise-standard switching architectures, focusing on preventing Layer 2 loops, maximizing inter-switch bandwidth, and mitigating common network attacks.
